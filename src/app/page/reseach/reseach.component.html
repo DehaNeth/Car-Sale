@@ -1,0 +1,27 @@
+<div class="container mt-2 mb-2">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="electric-tab" data-bs-toggle="tab" data-bs-target="#electric-tab-pane" type="button" role="tab" aria-controls="electric-tab-pane" aria-selected="true" routerLink="/research/">Electric</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="autonomous-tab" data-bs-toggle="tab" data-bs-target="#autonomous-tab-pane" type="button" role="tab" aria-controls="autonomous-tab-pane" aria-selected="false" routerLink="/research/autonomous">Autonomous</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="materials-tab" data-bs-toggle="tab" data-bs-target="#materials-tab-pane" type="button" role="tab" aria-controls="materials-tab-pane" aria-selected="false" routerLink="/research/materials">Materials</button>
+    </li>
+   
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="electric-tab-pane" role="tabpanel" aria-labelledby="electric-tab" tabindex="0">
+      <app-electric></app-electric>
+    </div>
+    <div class="tab-pane fade" id="autonomous-tab-pane" role="tabpanel" aria-labelledby="autonomous-tab" tabindex="0">
+      <app-autonomous></app-autonomous>
+    </div>
+    <div class="tab-pane fade" id="materials-tab-pane" role="tabpanel" aria-labelledby="materials-tab" tabindex="0">
+       <app-materials></app-materials>
+    </div>
+   
+  </div>
+  
+</div>
